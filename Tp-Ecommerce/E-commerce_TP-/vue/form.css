@@ -1,0 +1,126 @@
+*{
+    margin:0;
+    padding: 0;
+}
+
+.tronc{
+    margin:10%,12%;
+    margin-top:20%;
+    display:flex;
+    flex-direction: column;
+}
+.upper{
+    text-align: center;
+    margin-bottom: 3%;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+form{
+    align-items: center;
+    width:auto;
+    margin: 3% 20%;
+    padding:2% 0%;
+    background-color: #FFFF;
+    border:0.5px black solid;
+    border-radius:15px;
+    box-shadow: 1px 2px 2px 2px rgba(0,0,0,0.3);
+    display:flex;
+    flex-direction: column;
+    gap:10px;
+}
+
+form input , select{
+    width:80%;
+    padding :4% 5%;
+    border: 0.5px black solid;
+    outline:none;
+   border-radius: 25px;
+}
+
+form input::placeholder{
+    font-size:normal;
+}
+form input[type='submit']{
+    font-size: large;
+    font-weight: 520;
+}
+
+#age{
+    display:none;
+}
+ .btn-btn{
+    cursor:pointer;
+    margin-top:2%;
+    margin-bottom: 2%;
+    transition: all 0.5s  ease;
+}
+.btn-btn:hover{
+        background-color:orange;
+        transform:translateY(10px);
+        transition:0.5s  ease-out;
+}
+
+.inscrit{
+   display:flex;
+   flex-direction:column;
+   gap:5px;
+}
+.inscrit p, a{
+    font-size:large;
+}
+.inscrit a{
+    text-decoration: none;
+}
+
+#choice{
+    width:90%;
+    padding: 12px 18px;
+    border-radius: 25px;
+    font-size:85%;
+    /* color: rgba(26, 110, 29, 0.7); */
+   
+}
+#choice option{
+    font-size:120%;
+    color:rgba(0, 0, 0, 0.7);;
+}
+
+.down #btn{
+    padding:5% 3%;
+}
+
+@media screen and (min-width: 700px) {
+    .tronc{
+        margin:10%,12%;
+        margin-top:5%;
+    }
+    .upper{
+    font-size: 30px;
+
+    }
+    form input{
+        padding :2% 3%;
+      
+    }
+
+    form input::placeholder{
+        font-size:large;
+    }
+    .inscrit {
+    flex-direction:row;
+    gap:20px;
+    }
+
+    .inscrit p,a{
+    font-size:x-large;
+
+    }
+    #choice{
+        width:86%;
+        padding: 18px 30px;
+        font-size:100%;
+
+    }
+
+}
